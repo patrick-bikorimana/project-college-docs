@@ -34,7 +34,7 @@ public class UserDao extends Auditable{
     private boolean mfaEnabled;
     @JsonIgnore
     private String qrCodeSecret;
-    @Column(columnDefinition = "TEXT") //more characters than default varchar
+    @Column(columnDefinition = "text") //more characters than default varchar
     private String qrCodeUri;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinTable(
