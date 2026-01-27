@@ -38,7 +38,7 @@ public class UserDao extends Auditable{
     private String qrCodeUri;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinTable(
-            name = "users_role",
+            name = "user_role",
             joinColumns = @JoinColumn(
                     name = "user_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(
